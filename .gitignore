@@ -1,0 +1,7 @@
+.terraform
+client.ovpn
+master
+master.pub
+secrets.tf
+terraform.tfstate
+terraform.tfstate.backup
