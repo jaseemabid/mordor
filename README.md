@@ -43,6 +43,11 @@ Copy the generated VPN config file `client.ovpn`. Keep this safe.
 - 1 Private key to manage SSH
 - 2 Security groups to allow SSH and VPN traffic
 
+## Awesome things I can do with a self controlled VPS ##
+
+https://github.com/n1trux/awesome-sysadmin
+https://github.com/Kickball/awesome-selfhosted
+
 ## VPN ##
 
 OpenVPN for all traffic, including HTTP, HTTPS and ~~DNS~~.
