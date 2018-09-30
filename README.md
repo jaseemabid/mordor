@@ -83,6 +83,8 @@ public IP so that phone can connect as well.
 - [ ] Limit DNS connections to pi hole server from trusted machines.
 - [ ] Serve pi hole over tls, even in VPN
 - [ ] WIN!
+- [ ] DNS over TLS; see [cloudflare blog][cf]
 
+[cf]: https://blog.cloudflare.com/enable-private-dns-with-1-1-1-1-on-android-9-pie/
 [openvpn-install]: https://github.com/Nyr/openvpn-install
 [viscosity]: https://www.sparklabs.com/viscosity/
