@@ -9,6 +9,7 @@ Generate keys for AWS login, the private key `master` and public key
 
 Terraform apply to create the infra.
 
+    $ terraform init
     $ terraform apply
 
 Forward DNS to the elastic IP from the hosting provider's DNS config.
