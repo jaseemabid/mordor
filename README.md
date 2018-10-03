@@ -107,6 +107,11 @@ public IP so that phone can connect as well.
 - [ ] WIN!
 - [ ] DNS over TLS; see [cloudflare blog][cf]
 
+# Reading list
+
+https://github.com/StreisandEffect/streisand
+
+
 [cf]: https://blog.cloudflare.com/enable-private-dns-with-1-1-1-1-on-android-9-pie/
 [openvpn-install]: https://github.com/Nyr/openvpn-install
 [viscosity]: https://www.sparklabs.com/viscosity/
