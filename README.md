@@ -8,9 +8,9 @@
 ## Getting started
 
 Generate keys for AWS login, the private key `master` and public key
-`master.pub`.
+`master.pub`. `NAME` and `EMAIL` are required arguments and they should be set appropriately.
 
-    $ make master
+    $ NAME="<YOUR NAME>" EMAIL="<YOUR EMAIL>" make master
 
 Configure your AWS access keys by:
 
