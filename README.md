@@ -7,8 +7,7 @@
 
 ## Getting started
 
-Generate keys for AWS login, the private key `master` and public key
-`master.pub`.
+Generate a key pair for SSH access into the newly minted instances.
 
     $ make master
 
@@ -16,12 +15,14 @@ Configure your AWS access keys by:
 
     $ cp terraform.tfvars.example terraform.tfvars
 
-And populate it with your `access_key` and `secret_key`. You may also set the following environment variables and `terraform` will pick them up for you:
+And populate it with your `access_key` and `secret_key`. You may also set the
+following environment variables and `terraform` will pick them up for you:
 
     TF_VAR_access_key
     TF_VAR_secret_key
 
-The default AWS region is set to `eu-west-2` but you can set it in `terraform.tfvars` or confiure the environment variable `TF_VAR_region`.
+The default AWS region is set to `eu-west-2` but you can set it in
+`terraform.tfvars` or confiure the environment variable `TF_VAR_region`.
 
 Terraform apply to create the infra.
 
