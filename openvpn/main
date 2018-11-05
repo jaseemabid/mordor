@@ -1,0 +1,9 @@
+#!/bin/bash -ex
+
+if [[ ! -a /dev/net/tun ]]
+then
+    mkdir -p /dev/net
+    mknod /dev/net/tun c 10 200
+fi
+
+exec openvpn --config /etc/openvpn/openvpn.conf
