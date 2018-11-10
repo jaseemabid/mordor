@@ -66,6 +66,18 @@ resource "aws_security_group" "pi" {
   }
 }
 
+resource "aws_security_group" "wg" {
+  name        = "wg"
+  description = "Allow inbound wireguard traffic"
+
+  ingress {
+    from_port   = 5555
+    to_port     = 5555
+    protocol    = "udp"
+    cidr_blocks = ["0.0.0.0/0"]
+  }
+}
+
 resource "aws_instance" "bastion" {
   ami           = "ami-0b0a60c0a2bd40612"
   instance_type = "t2.micro"
@@ -74,6 +86,7 @@ resource "aws_instance" "bastion" {
   vpc_security_group_ids = ["${aws_security_group.ssh.id}",
     "${aws_security_group.vpn.id}",
     "${aws_security_group.pi.id}",
+    "${aws_security_group.wg.id}"
   ]
 
   tags {
