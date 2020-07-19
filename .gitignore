@@ -1,8 +1,8 @@
+*.conf
 .terraform
-client.ovpn
-master
-master.pub
-secrets.tf
+primary
+primary.pub
 terraform.tfstate
 terraform.tfstate.backup
 terraform.tfvars
+this
